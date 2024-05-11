@@ -40,6 +40,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 #about {
@@ -49,7 +50,6 @@ body {
 	padding-block: 100px;
 	position: relative;
 }
-
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
@@ -60,17 +60,23 @@ body {
 	left: 0;
 	z-index: -1;
 }
-
 .picture {
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
 }
-
 .picture img {
 	width: 100%;
-
 }
+.picture.right {
+	width: 50%;
+	height: 50%;
+}
+.picture.left {
+	width: 50%;
+	height: 50%;
+}
+
 #about-me {
 	flex: 2
 }
@@ -117,7 +123,6 @@ body {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
-
 }
 .gallery-item {
 	position: absolute;
